@@ -1,0 +1,6 @@
+"0","rows_over=filter(data_to_model, Class == ""Alive"") |> nrow() "
+"0","rows_to_fill= nrow(data_to_model) + (nrow(data_to_model) - rows_over)"
+"0",""
+"0",""
+"0","data_balanced_over <- ovun.sample(Class ~ ., data = data_to_model, method = ""over"",N = rows_to_fill)$data"
+"0","data_balanced_over"
